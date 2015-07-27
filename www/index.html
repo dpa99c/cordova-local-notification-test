@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title></title>
+
+	  <meta charset="utf-8" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	  <!-- Enable all requests, inline styles, and eval() -->
+	  <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+
+
+	  <script type="text/javascript" src="cordova.js" charset="utf-8"></script>
+
+    <script type="text/javascript" charset="utf-8" src="js/core/jQuery.js"></script>
+        
+
+    <script type="text/javascript" charset="utf-8" src="js/init.js"></script>
+    
+    <!-- STYLE STUFF -->
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+  <body onload="app.bodyLoad()">
+  <div id="header"></div>
+    <div class="btn" onClick="notification.local_now();">Notification now</div>
+    <div class="btn" onClick="notification.local_10();">Notification  in 10s</div>
+    <div class="btn" onClick="notification.clear();">Clear all notifications</div>
+  </body>
+</html>
